@@ -1,0 +1,15 @@
+name = "test"
+type = "javascript"
+account_id = "0d73a5425b192a44dbd877811d871df0"
+workers_dev = true
+route = ""
+zone_id = "d88b56b6da0b67d830d1df73fecb3c37"
+compatibility_date = "2022-02-26"
+
+[site]
+bucket = ".output/public"
+entry-point = ".output"
+
+[build]
+command = "NITRO_PRESET=cloudflare yarn nuxt build"
+upload.format = "service-worker"
